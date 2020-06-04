@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/transferStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:text="@string/transfer_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/transferStatus" />
+
+    <TextView
+        android:id="@+id/receiveShop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:text="@string/transfer_receive_shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/receiveShop" />
+
+    <TextView
+        android:id="@+id/supplierID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:text="@string/supplier_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/supplierID" />
+
+    <TextView
+        android:id="@+id/goodsType"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:text="@string/goods_class"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider14" />
+
+    <View
+        android:id="@+id/divider01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/three_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/goodsType" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:text="@string/start_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider01" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/startTime" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:text="@string/end_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider23"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/endTime" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/query"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintWidth_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

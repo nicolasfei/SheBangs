@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/store"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="店铺名\t\t\t\t邛崃市北街1店"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="收银员\t\t\t\t小明"
+            android:textSize="@dimen/settlement_detailed_text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store" />
+
+    <LinearLayout
+        android:id="@+id/detailed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="3"
+            android:gravity="center|start"
+            android:text="@string/settlement_detailed"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="@dimen/three_layer_nesting_margin"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/goods_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:singleLine="true"
+            android:text="合计：999\t\t￥66.00"
+            android:textSize="@dimen/settlement_detailed_text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/three_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/sale_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:headerDividersEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sale_list_view" />
+
+    <LinearLayout
+        android:id="@+id/vip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+        <TextView
+            android:id="@+id/vip1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="会员\t\t\t\t15184481369"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/vip2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="本次积分\t\t\t\t120"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/vip3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="消费积分\t\t\t\t120"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/vip4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="剩余积分\t\t\t\t120"
+            android:textSize="@dimen/settlement_detailed_text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vip" />
+
+    <LinearLayout
+        android:id="@+id/cash"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+        <TextView
+            android:id="@+id/cash1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="收款金额\t\t\t\t￥130.00\t\t\t\t积分抵扣￥10.00"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/cash2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="应收金额\t\t\t\t￥120.00"
+            android:textSize="@dimen/settlement_detailed_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/cash3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="收款合计\t\t\t\t￥120.00\t\t\t\t找零￥20.00"
+            android:textSize="@dimen/settlement_detailed_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sale_submit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_rectangle_blue"
+        android:text="@string/settlement_print_bill"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/settlement_detailed_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:title="营业员-小红" />
+        <item
+            android:checked="false"
+            android:title="营业员-小明" />
+        <item
+            android:checked="false"
+            android:title="营业员-小白" />
+    </group>
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/shop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="start|center"
+        android:text="@string/shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/three_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/shop" />
+
+    <TextView
+        android:id="@+id/vipTel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start|center"
+        android:text="@string/vip_tel"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <EditText
+        android:id="@+id/vipTelEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:drawableEnd="@drawable/ic_sr_blue"
+        android:gravity="start|center"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toEndOf="@+id/vipTel"
+        app:layout_constraintTop_toBottomOf="@+id/divider1"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vipTelEdit" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layer_nesting_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/query"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="@dimen/layout_height_percent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

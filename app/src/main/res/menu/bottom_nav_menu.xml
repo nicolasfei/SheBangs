@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_cash"
+        android:icon="@drawable/ic_cash"
+        android:title="@string/nav_button_cashier" />
+    <item
+        android:id="@+id/navigation_server"
+        android:icon="@drawable/ic_server"
+        android:title="@string/nav_button_server" />
+    <item
+        android:id="@+id/navigation_myStore"
+        android:icon="@drawable/ic_set"
+        android:title="@string/nav_button_myStore" />
+</menu>

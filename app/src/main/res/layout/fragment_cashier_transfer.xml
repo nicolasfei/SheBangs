@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/fragment_transfer_weight_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/fragment_transfer_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/transfer_goods_code" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                style="@style/fragment_transfer_weight_style"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:text="12345678996322" />
+
+            <View
+                android:layout_width="@dimen/three_layer_nesting_margin"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/yes" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_layer_nesting_margin"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/fragment_cashier_weight_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/fragment_transfer_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/transfer_to_shop" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView"
+                android:layout_width="0dp"
+                style="@style/fragment_transfer_weight_style"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="H01" />
+
+            <View
+                android:layout_width="@dimen/three_layer_nesting_margin"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/transfer_start_transfer" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/transfer_query" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ListView
+        style="@style/fragment_transfer_weight_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="7" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/fragment_transfer_weight_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.45"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/fragment_transfer_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量合计：0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--付款方式-->
+    <string-array name="payment_type">
+        <item>现金</item>
+        <item>微信</item>
+        <item>支付宝</item>
+        <item>刷卡</item>
+    </string-array>
+
+    <!--调/收货接收状态-->
+    <string-array name="receive_state">
+        <item>已确认</item>
+        <item>待确认</item>
+    </string-array>
+</resources>

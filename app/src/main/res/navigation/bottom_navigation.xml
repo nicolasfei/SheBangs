@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@+id/navigation_cash">
+
+    <fragment
+        android:id="@+id/navigation_cash"
+        android:name="com.prxd.shebangs.ui.cashier.CashierNavigation"
+        android:label="@string/nav_button_cashier"
+        tools:layout="@layout/fragment_nav_cash" />
+
+    <fragment
+        android:id="@+id/navigation_server"
+        android:name="com.prxd.shebangs.ui.server.ServerNavigation"
+        android:label="@string/nav_button_server"
+        tools:layout="@layout/fragment_nav_server" />
+
+    <fragment
+        android:id="@+id/navigation_myStore"
+        android:name="com.prxd.shebangs.ui.store.StoreNavigation"
+        android:label="@string/nav_button_myStore"
+        tools:layout="@layout/fragment_nav_mystore" />
+</navigation>

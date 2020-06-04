@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cashier_vip_navigation"
+    app:startDestination="@+id/navigation_branch_vip">
+
+    <fragment
+        android:id="@+id/navigation_branch_vip"
+        android:name="com.prxd.shebangs.ui.cashier.vip.BranchVipIntegral"
+        android:label="@string/nav_button_cashier"
+        tools:layout="@layout/fragment_cashier_vip_branch" />
+
+    <fragment
+        android:id="@+id/navigation_vip_consume"
+        android:name="com.prxd.shebangs.ui.cashier.vip.VipConsumeIntegralRecode"
+        android:label="@string/nav_button_server"
+        tools:layout="@layout/fragment_cashier_vip_consume" />
+</navigation>
